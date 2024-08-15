@@ -18,16 +18,16 @@ import AnimatedContainer from "@/components/utils/AnimatedContainer";
 export default function Home() {
   return (
     <main className="bg-slate-50" style={{ overflow: "hidden" }}>
-      <div className=" flex flex-col mx-auto w-[90%] md:flex-row md:items-center justify-between gap-10 relative">
+      <div className=" flex flex-col mx-auto w-[90%] lg:flex-row md:items-center justify-between gap-10 relative">
         <motion.div
           animate={{ x: 0, opacity: 1 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ delay: 0.2, duration: 0.8 }}
-          className="md:w-1/2 grid grid-cols-1 gap-2"
+          className="lg:w-1/2 grid grid-cols-1 gap-2"
         >
-          <h1 className="flex flex-col gap-2">
+          <h1 className="flex flex-col gap-2 text-center lg:text-left pt-4 lg:pt-0">
             <span className="text-2xl">Welcome to</span>
-            <span className="text-3xl lg:text-[3rem] font-semibold text-red-600 lg:leading-[1.1]">{schoolName}</span>
+            <span className="text-3xl lg:text-[3rem] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600 lg:leading-[1.1]">{schoolName}</span>
           </h1>
 
           <div className="mb-4">
@@ -43,7 +43,7 @@ export default function Home() {
           animate={{ x: 0, opacity: 1 }}
           initial={{ opacity: 0, x: 100 }}
           transition={{ delay: 0.2, duration: 0.8 }}
-          className="md:flex md:justify-end md:items-center md:w-1/2"
+          className="md:flex md:justify-end md:items-center lg:w-1/2"
         >
           <Image
             className="rounded-md"
@@ -64,7 +64,7 @@ export default function Home() {
                 animate={{ x: 0, opacity: 1 }}
                 initial={{ opacity: 0, x: -100 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
-                className="grid grid-cols-1 gap-3 md:gap-4 mx-auto lg:w-3/4">
+                className="flex flex-col gap-2 mx-auto lg:w-3/4">
                 <p
                   className=""
                 >
@@ -72,8 +72,8 @@ export default function Home() {
                 </p>
                 <Button
                   href="/about"
-                  btnText="explore more"
-
+                  btnText="Read more"
+                
                 />
               </motion.section>
               <motion.div

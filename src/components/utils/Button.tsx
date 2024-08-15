@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
+import clsx from "clsx";
 
 type BtnProps ={
   href: string,
@@ -13,11 +14,11 @@ const Button = ({href, btnText, className}:BtnProps) => {
     <Link
           
             href={href}
-                        className={`rounded-lg flex items-center gap-2 bg-primary p-2 text-center transition-all duration-200 ease-linear text-white hover:border hover:border-primary hover:text-primary hover:bg-white uppercase ${className ? className : "justify-center w-fit py-3 "}`}
+                        className={clsx(`bg-white shadow w-fit h-fit rounded p-3 hover:shadow-md`, className)}
             // style={{display: "block"}}
           >
             <span>{btnText}</span>
-            <BsArrowUpRight className="self-start" />
+            {/* <BsArrowUpRight className="self-start" /> */}
           </Link>
   
   )
