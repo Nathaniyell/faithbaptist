@@ -124,11 +124,9 @@ function Footer() {
 
           <QuickLinkComp heading="quick links" linksArray={quickLinks} />
         </aside>
-
         {/* footer bottom */}
-
         <div className="mt-2 mb-10">
-          <p className="capitalize text-sm sm:text-sm text-center font-medium text-slate-400">
+          <p className="capitalize text-sm sm:text-sm text-center font-medium text-slate-200">
             <span>Copyright &copy; All rights reserved {year}</span> - <span>{schoolName}</span>
           </p>
         </div>
@@ -136,7 +134,7 @@ function Footer() {
       <button
         onClick={moveTop}
         className={`${isMoveToVisible ? "scale-100 opacity-100" : "scale-0 opacity-0"
-          } fixed bottom-5 right-5 bg-white hover:bg-opacity-70 text-primary p-2 rounded-full z-[10000] outline-0 transition-all duration-300`}
+          } fixed bottom-5 right-5 bg-primary2 hover:bg-opacity-70 text-white p-2 rounded-full z-[10000] outline-0 transition-all duration-300`}
       >
         <BsArrowBarUp className="text-2xl" />
       </button>
