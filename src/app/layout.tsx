@@ -27,7 +27,7 @@ export default function RootLayout({
         >
           <NavBar />
           
-          <Space border=" h-[5rem] xs:h-[7rem]" />
+          <Space border=" h-[3rem] xs:h-[7rem]" />
           {children}
 
           <Space />
