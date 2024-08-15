@@ -11,6 +11,8 @@ import Titles from "@/components/titles/Titles";
 import { schoolName } from "@/components/lib/data";
 import { FaSchool } from "react-icons/fa";
 import Card from "@/components/card/Card";
+import WhyChooseUs from "@/components/whatWeOffer/WhyChooseUs";
+import AnimatedContainer from "@/components/utils/AnimatedContainer";
 
 
 export default function Home() {
@@ -50,7 +52,7 @@ export default function Home() {
         </motion.div>
       </div>
       <Space />
-      <section className="relative bg-secondary2">
+      <AnimatedContainer className="relative bg-secondary2">
         <div className="bg-lightBg text-backgrounds relative flex flex-col">
 
           <div className="w-[90%] mx-auto relative grid place-items-center md:p-[2rem]">
@@ -97,18 +99,17 @@ export default function Home() {
           <Space />
         </div> */}
 
-      </section>
-      <div className="text-backgrounds bg-white">
+      </AnimatedContainer>
+      <AnimatedContainer className="text-slate-700 bg-white">
         <div className="!w-[90%] mx-auto">
           <Space />
           <Titles bigHeader="What we offer" smallHeader="start learning with us" variant="dark" />
           <br />
-          <Card icon={<FaSchool />}  title="Nursery" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ipsum?" />
-
-
+          <WhyChooseUs />
+          <br />
         </div>
         <Space />
-      </div>
+      </AnimatedContainer>
     </main>
   );
 }
