@@ -10,7 +10,7 @@ import Space from "@/components/Space";
 export const metadata: Metadata = {
   title: "Faith Baptist Schools",
   description:
-    "Build God-fearing leaders of tomorrow",
+    "Building God-fearing leaders of tomorrow",
 };
 
 export default function RootLayout({
