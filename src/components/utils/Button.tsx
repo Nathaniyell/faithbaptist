@@ -6,13 +6,14 @@ type BtnProps ={
   href: string,
   btnText: string
   className?: string,
+  [key: string]: any; // Allows any additional props
 
 }
 
-const Button = ({href, btnText, className}:BtnProps) => {
+const Button = ({href, btnText, className, ...props}:BtnProps) => {
   return (
     <Link
-          
+    {...props}
             href={href}
                         className={clsx(`bg-white shadow w-fit h-fit rounded p-3 hover:shadow-md`, className)}
             // style={{display: "block"}}
