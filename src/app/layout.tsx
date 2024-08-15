@@ -29,8 +29,6 @@ export default function RootLayout({
           
           <Space border=" h-[3rem] xs:h-[7rem]" />
           {children}
-
-          <Space />
           <Footer />
         </body>
       </Providers>

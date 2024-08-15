@@ -6,15 +6,13 @@ import Space from "@/components/Space";
 import heroImg from "../../public/faithbaptist/hero2.jpg"
 import heroImg2 from "../../public/faithbaptist/heroo.jpg"
 import headTeacher from "../../public/faithbaptist/headteacher.jpg"
-
-import StartUp from "@/components/startup/StartUp";
 import Titles from "@/components/titles/Titles";
 import { schoolName } from "@/components/lib/data";
-import { FaSchool } from "react-icons/fa";
-import Card from "@/components/card/Card";
 import WhyChooseUs from "@/components/whatWeOffer/WhyChooseUs";
 import AnimatedContainer from "@/components/utils/AnimatedContainer";
 import { useState } from "react";
+import OutstandingFeatures from "@/components/outstanding-features/page";
+import GalleryGrid from "@/components/gallery/GalleryGrid";
 
 
 export default function Home() {
@@ -29,7 +27,7 @@ export default function Home() {
           className="lg:w-1/2 grid grid-cols-1 gap-2"
         >
           <h1 className="flex flex-col gap-2 text-center lg:text-left pt-4 lg:pt-0">
-            <span className="text-2xl">Welcome to</span>
+            <span className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-amber-800">Welcome to</span>
             <span className="text-3xl lg:text-[3rem] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-red-500 lg:leading-[1.1]">{schoolName}</span>
           </h1>
 
@@ -55,17 +53,13 @@ export default function Home() {
           />
         </motion.div>
       </div>
-      <br />
-      <br />
-      <br />
-
+      <Space />
       <AnimatedContainer className="relative bg-secondary2">
-        <br />
-        <br />
+      <Space border="hidden md:block" />
+        
         <div className="w-[90%] mx-auto relative grid place-items-center py-5">
           <Titles bigHeader="About Faith Baptist Schools" smallHeader="About us" variant="dark" />
-          <br />
-          <br />
+          <Space />
           <aside
             className="flex flex-col lg:flex-row w-full gap-6"
           >
@@ -97,42 +91,32 @@ export default function Home() {
             </motion.div>
           </aside>
         </div>
-
-
-        {/* <div className="bg-black">
-          <Space />
-
-          <StartUp />
-          <Space />
-        </div> */}
-
+        <Space />
       </AnimatedContainer>
-
+      
       <AnimatedContainer className="text-slate-700 bg-white">
-        <br />
+      <Space />
+      <Space border="hidden md:block" />
 
-        <br />
-        <br />
+        
         <div className="!w-[90%] mx-auto">
 
           <Titles bigHeader="What we offer" smallHeader="start learning with us" variant="dark" />
-          <br />
-          <br />
+          <Space />
           <WhyChooseUs />
-          <br />
+          <Space />
         </div>
-        <Space />
+        <Space border="hidden md:block" />
       </AnimatedContainer>
-      <br />
+      
 
       <AnimatedContainer className="relative">
 
         <div className="w-[90%] mx-auto relative grid place-items-center py-5 md:py-10">
-
+        <Space border="hidden md:block" />
           <Titles bigHeader="Welcome Message by our Headteacher" smallHeader="Meet our Headteacher" variant="dark" />
 
-          <br />
-          <br />
+          <Space />
           <aside
             className="flex flex-col lg:flex-row-reverse w-full gap-6"
           >
@@ -170,8 +154,30 @@ export default function Home() {
               <Image src={headTeacher} className="size-full md:mr-auto rounded-md" alt="About ProdLead" />
             </motion.div>
           </aside>
+
         </div>
+        <Space />
       </AnimatedContainer>
+      <AnimatedContainer className="text-slate-700 bg-white">
+        <Space />
+        <Space border="hidden md:block" />
+        <div className="!w-[90%] mx-auto">
+        <Space border="hidden md:block" />
+          <Titles smallHeader="Outstanding features" bigHeader="Why choose Faith Baptist School" variant="dark" />
+          <Space />
+          <OutstandingFeatures />
+          <Space />
+        </div>
+        <Space />
+      </AnimatedContainer>
+      <AnimatedContainer className="bg-[#f7fcfe]">
+      <Space border="hidden md:block" />
+        <Titles smallHeader="Our gallery" bigHeader="Explore Our Gallery" variant="dark" />
+        <Space />
+        <GalleryGrid />
+        <Space />
+      </AnimatedContainer>
+
     </main>
   );
 }

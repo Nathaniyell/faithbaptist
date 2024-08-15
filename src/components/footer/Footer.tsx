@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useRef, FormEvent } from "react";
+import React, { useState, useEffect} from "react";
 import { BsArrowBarUp, BsTelephoneForward } from "react-icons/bs";
 import Logo from "../../../public/images/logo.png";
 import { CiMail } from "react-icons/ci";
@@ -7,8 +7,8 @@ import Link from "next/link";
 import Image from "next/image";
 import Space from "@/components/Space";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
-import { SiFacebook, SiInstagram, SiTwitter, SiWhatsapp } from "react-icons/si";
+
+import { SiFacebook, SiInstagram,} from "react-icons/si";
 import QuickLinkComp from "../QuickLink";
 import { addressDetails, phoneNumber, quickLinks, schoolName } from "../lib/data";
 import { MdMail } from "react-icons/md";
@@ -21,8 +21,7 @@ interface FormFields {
 
 function Footer() {
   const [isMoveToVisible, setIsMoveToVisible] = useState(false);
-  const formRef = useRef<HTMLFormElement | null>(null);
-
+  
   const year = new Date().getFullYear();
 
   const moveTop = () => {
@@ -30,31 +29,7 @@ function Footer() {
     document.documentElement.scrollTop = 0;
   };
 
-  const messageSubmitHandler = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    if (formRef.current) {
-      emailjs
-        .sendForm(
-          process.env.NEXT_PUBLIC_YOUR_SERVICE_ID || '',
-          process.env.NEXT_PUBLIC_YOUR_TEMPLATE_ID || '',
-          formRef.current,
-          process.env.NEXT_PUBLIC_YOUR_PUBLIC_KEY || '' // Replace with your EmailJS user ID
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-            // console.log(formRef.current);
-            formRef.current?.reset(); // Clear the form fields
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
-    }
-
-  };
-
+  
   const scrolling = () =>
     window.scrollY > 100 ? setIsMoveToVisible(true) : setIsMoveToVisible(false);
 
