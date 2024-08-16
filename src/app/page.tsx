@@ -128,9 +128,9 @@ export default function Home() {
               <p
                 className={`${isVisible ? "" : "line-clamp-6"}`}
               >
-                Welcome to the Faith Baptist Nursery and Primary School website! Our site is designed to be welcoming and informative for parents, pupils, and visitors. At Faith Baptist, we are committed to providing an excellent all-around education that emphasizes strong morals, discipline, and the fear of God. Our dedicated School Management Board, PTA, and staff use innovative teaching methods and diverse learning environments to support each child&apos;s academic success. <br />
+                Welcome to the Faith Baptist Nursery and Primary School website! Our site is designed to be welcoming and informative for parents, pupils, and visitors. At Faith Baptist, we are committed to providing an excellent all-around education that emphasizes strong morals, discipline, and the fear of God. Our dedicated School Management Board, PTA, and staff use innovative teaching methods and diverse learning environments to support each child&apos;s academic success. <br /><br />
 
-                We are proud of the strong partnership we share with our parents, whose support has been instrumental in our school’s achievements. Our pupils thrive in a warm, nurturing environment where they excel in various subjects, including reading, writing, mathematics, ICT, and more. With activities like career talks, sports, and clubs, we aim to create a <blockquote>home away from home</blockquote> for our pupils, preparing them for a bright future. <br />
+                We are proud of the strong partnership we share with our parents, whose support has been instrumental in our school’s achievements. Our pupils thrive in a warm, nurturing environment where they excel in various subjects, including reading, writing, mathematics, ICT, and more. With activities like career talks, sports, and clubs, we aim to create a &quot;home away from home&quot; for our pupils, preparing them for a bright future. <br /><br />
 
                 Choosing Faith Baptist Nursery and Primary School for your child is a significant decision, and we are confident that our approach to education will help your child achieve their fullest potential. We are always delighted to welcome you to our school community.
               </p>

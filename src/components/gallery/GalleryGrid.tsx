@@ -72,7 +72,7 @@ const GalleryGrid = () => {
     <Button
                 href="/gallery"
                 btnText="view more"
-                className='bg-blue-600 text-white'
+                className='!bg-blue-600 text-white'
               />
     </div>
   );
