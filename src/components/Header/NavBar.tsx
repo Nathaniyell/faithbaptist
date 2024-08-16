@@ -76,7 +76,7 @@ export default function NavBar() {
             !isMenuClicked
               ? "left-full md:left-0 -z-10 opacity-10 md:opacity-100 md:z-50"
               : "left-0 md:top-0 opacity-100"
-          } bg-backgrounds md:bg-transparent fixed md:relative top-[80px] md:top-0 flex flex-col md:flex-row justify-between p-4 md:p-2 gap-8 sm:p-6 w-full md:text-[1rem] lg:gap-0 md:w-full text-xl transition-all duration-500 md:transition-none capitalize text-primary`}
+          } bg-backgrounds md:bg-transparent fixed md:relative top-[70px] md:top-0 flex flex-col md:flex-row justify-between p-4 md:p-2 gap-8 sm:p-6 w-full md:text-[1rem] lg:gap-0 md:w-full text-xl transition-all duration-500 md:transition-none capitalize text-primary`}
         >
           <Link
             onClick={() => setIsMenuClicked(false)}
@@ -135,7 +135,7 @@ export default function NavBar() {
             onClick={() => setIsMenuClicked(false)}
             href=""
             target="_blank"
-            className={`text-white bg-red-600 border broder-primary flex items-center justify-center gap-1 p-2 text-center w-2/5  md:text-sm md:hidden lg:flex lg:w-1/3 xl:w-1/5 transition-all duration-200 rounded-lg`}
+            className={`text-white bg-red-600 border broder-primary flex items-center justify-center gap-1 p-2 text-center w-3/5 md:text-sm md:hidden lg:flex lg:w-1/3 xl:w-1/5 transition-all duration-200 rounded-lg`}
           >
             <span>school portal</span>
           </Link>
