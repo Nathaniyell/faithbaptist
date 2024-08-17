@@ -105,16 +105,16 @@ export default function NavBar() {
 
           <Link
             onClick={() => setIsMenuClicked(false)}
-            href="/services"
+            href="/gallery"
             className={`${
-              pathName === "/services"
+              pathName === "/gallery"
                 ? "text-primary font-semibold"
                 : "text-slate-700  hover:text-primary"
             } flex items-center  w-fit px-0 ${
               isMenuClicked && "w-full pb-4 pl-2"
             }`}
           >
-            <span>services</span>
+            <span>gallery</span>
           </Link>
 
           <Link
