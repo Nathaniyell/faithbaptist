@@ -1,27 +1,24 @@
-import { RiComputerFill } from "react-icons/ri";
-import { GiTeacher } from "react-icons/gi";
-import { IoLibrary } from "react-icons/io5";
-import { FaChurch } from "react-icons/fa";
-import Card from "../card/Card";
 import AnimatedContainer from "../utils/AnimatedContainer";
-
+import { TiEye } from "react-icons/ti";
+import { TbTargetArrow } from "react-icons/tb";
+import { LiaHandshake } from "react-icons/lia";
 
 const OutstandingFeatures = () => {
 const whatWeOffer = [
         {
             header: "Our Mission",
             description: "The mission of our Faith Baptist pupils is to provide a nurturing and empowering educational environment that fosters the holistic development of young leaders and to inculcate the fear of God early in the hearts of the children",
-            icon: <FaChurch size={32} />
+            icon: <TbTargetArrow size={32} />
     },
         {
             header: "Our Vision",
             description: "To build God-fearing leaders of tomorrow",
-            icon: <RiComputerFill size={32} />
+            icon: <TiEye size={32} />
     },
         {
             header: "Our Motto",
             description: "Fear of God and Wisdom",
-            icon: <GiTeacher size={32} />
+            icon: <LiaHandshake size={32} />
     },
        
     ]
