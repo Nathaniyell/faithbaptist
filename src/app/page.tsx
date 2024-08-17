@@ -59,7 +59,7 @@ export default function Home() {
         </motion.div>
       </div>
       <Space />
-      <AnimatedContainer className="relative bg-secondary2">
+      <AnimatedContainer className="relative bg-cyan-50">
       <Space border="hidden md:block" />
         
         <div className="w-[90%] mx-auto relative grid place-items-center py-5">
