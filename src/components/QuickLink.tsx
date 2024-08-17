@@ -11,7 +11,7 @@ export default function QuickLinkComp({
   linksArray,
 }: QuickLinksProps) {
   return (
-    <div className="flex flex-col gap-6 justify-center hover:bg-black hover:bg-opacity-40 p-2 transition-all duration-300 rounded-md">
+    <div className="capitalize flex flex-col gap-6 justify-center hover:bg-black hover:bg-opacity-40 p-2 transition-all duration-300 rounded-md">
       <h1 className="text-xl sm:text-3xl font-bold mb-2">{heading}</h1>
       {linksArray.map(({ title, href }) => (
         <Link

@@ -48,7 +48,7 @@ function Footer() {
       className="bg-primary text-white py-10"
     >
 
-      <section className="w-[95%] mx-auto capitalize flex flex-col items-center justify-center gap-8">
+      <section className="w-[95%] mx-auto  flex flex-col items-center justify-center gap-8">
         {/* aside links */}
 
         <aside className="w-full grid lg:grid-cols-3 items-start justify-around gap-8">
@@ -56,7 +56,7 @@ function Footer() {
             <h1 className="text-xl sm:text-3xl font-bold mb-2">
              LOGO
             </h1>
-            <p className="w-3/"> A nurturing environment where your child can thrive academically and morally. At Faith Baptist Schools, we blend innovative teaching with strong values, ensuring a well-rounded education. With supportive parents and a dedicated team, we create a home away from home where every child excels. Choose Faith Baptist—where bright futures begin!</p>       
+            <p className="">Faith Baptist Shools! A nurturing environment where your child can thrive academically and morally. At Faith Baptist Schools, we blend innovative teaching with strong values, ensuring a well-rounded education. With supportive parents and a dedicated team, we create a home away from home where every child excels. Choose Faith Baptist—where bright futures begin!</p>       
           </div>
           <div className="flex flex-col justify-center item-center gap-2 p-2 hover:bg-black hover:bg-opacity-40 transition-all rounded-md">
             <h1 className="text-xl sm:text-3xl font-bold mb-2">

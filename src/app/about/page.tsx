@@ -5,8 +5,10 @@ import Image from "next/image"
 import schoolBuilding from "../../../public/faithbaptist/school-building.jpg"
 import schoolChildren from "../../../public/faithbaptist/faith12.jpg"
 import Staff from "@/components/staff/Staff"
+import { useState } from "react"
 
 const About = () => {
+  const [isVisible, setIsVisible] = useState(false)
   return (
     <main className="bg-blue-50">
       <h1 className="text-4xl font-semibold p-10 text-center bg-rose-200">About Us</h1>
@@ -15,8 +17,8 @@ const About = () => {
         <div className="w-11/12 mx-auto">
         <h3 className="font-semibold text-3xl text-primary text-center mb-4">The Best Nursery/Primary Education Rivers State</h3>
          
-          <AnimatedContainer className="mt-4 flex flex-col md:flex-row gap-10 justify-between w-full">
-            <Image src={schoolBuilding} alt="About our School" className="rounded-md w-2/5 h-[32rem] brightness-70" />
+          <AnimatedContainer className="mt-4 flex flex-col lg:flex-row gap-10 justify-between w-full">
+            <Image src={schoolBuilding} alt="About our School" className="rounded-md lg:w-2/5 lg:h-[32rem] brightness-70" />
 
             <p className="leading-loose">Welcome to Faith Baptist Nursery and Primary School. In our mind, Schools are meant to be citadels of learning where good moral training, discipline and the fear of God are expected to be inculcated in the pupils. The School Management Board, PTA, and Staff are committed to new innovative teaching methods and the highest possible educational provision by utilizing various physical and virtual learning environments to support pupils learning. <br />
               We are very proud because our parents are the best in the world and with their consistent support; they have contributed in various ways to the success of our dear school. We work as a team for a common goal, to make sure that our children remain happier and achieve good success in their primary levels. In addition, our pupils find themselves in a serene warm, caring, nurturing environment which is child- centered and dedicated to helping them attain the highest academic standards. <br />
@@ -48,7 +50,7 @@ const About = () => {
         <AnimatedContainer className="w-11/12 mx-auto">
         <h3 className="font-semibold text-3xl text-primary text-center mb-4">History about our school</h3>
         
-          <p className="line-clamp-6 leading-loose">The idea for the establishment of Faith Baptist Nursery/Primary School (formerly called First Baptist Nursery/primary School Diobu, PHC.) was first introduced in 1982 by the then Minister in-charge of Faith Baptist Church Port Harcourt, Late Rev. Godspower O. Isaiah.   This idea was accepted by the church and   consequently, a committee was set up for the take off and running of the school. The chairman of the committee was Late Lt. Commander Ogunike.  However, due to the nature of his  job as a military man, he found it increasingly difficult to combine both jobs.  Therefore, Mr. Clement Goin stepped into his shoes and hence was been regarded as the first chairman of the school committee.  <br />
+          <p  className={`leading-loose ${isVisible ? "" : "line-clamp-6"}`}>The idea for the establishment of Faith Baptist Nursery/Primary School (formerly called First Baptist Nursery/primary School Diobu, PHC.) was first introduced in 1982 by the then Minister in-charge of Faith Baptist Church Port Harcourt, Late Rev. Godspower O. Isaiah.   This idea was accepted by the church and   consequently, a committee was set up for the take off and running of the school. The chairman of the committee was Late Lt. Commander Ogunike.  However, due to the nature of his  job as a military man, he found it increasingly difficult to combine both jobs.  Therefore, Mr. Clement Goin stepped into his shoes and hence was been regarded as the first chairman of the school committee.  <br />
 
             The fundamental aim of establishing the school was mission.  That is, to inculcate the fear of God early in the hearts of children and reach the parents and guardians through the children and school activities.  Another basic aim for the establishment of the school was to create job opportunities for the unemployed members of the church.  <br />
 
@@ -86,6 +88,12 @@ const About = () => {
             Late Mrs. Rachael A. Akinola was appointed as the 6th substantive headteacher and was confirmed on May 3, 2010, she stayed in this position till 2019 when she resigned.
             Consequently, Mrs. Charity Osuigwe was appointed as the 8th and current Head teacher on August2019.  She is known for her commitment to good performance and is the brain behind the uptick in the use of technology in the administration and management of the school, thereby carving a niche for herself in the history of the school
           </p>
+          <button
+                onClick={(() => setIsVisible(!isVisible))}
+                className="text-blue-600 underline !self-start "
+              >
+                View {isVisible ? "less" : "more"}
+              </button>
         </AnimatedContainer>
 
       </section>
