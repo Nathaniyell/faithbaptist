@@ -40,7 +40,9 @@ export default function Home() {
             <p
               className="text-[#464545]"
             >
-              A nurturing environment where your child can thrive academically and morally. At Faith Baptist Schools, we blend innovative teaching with strong values, ensuring a well-rounded education. With supportive parents and a dedicated team, we create a home away from home where every child excels. Choose Faith Baptist—where bright futures begin!
+              Welcome to Faith Baptist Nursery and Primary School. This platform is designed to be user-friendly for parents, pupils and visitors. We hope it provides you with valuable insights into  <span className="font-[500] text-blue-600">our school’s mission: offering pupils an excellent, all-round education with strong moral values.</span>
+
+             
             </p>
           </div>
           <h6 className="text-black font-bold italic">Admission is ongoing, hurry to school now to apply!!!</h6>

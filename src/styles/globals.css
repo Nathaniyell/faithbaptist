@@ -33,12 +33,13 @@
   
     /* Track */
     ::-webkit-scrollbar-track {
-      @apply bg-primary;
+      @apply bg-rose-100;
     }
   
     /* Handle */
     ::-webkit-scrollbar-thumb {
-      @apply bg-secondary2;
+      @apply bg-neutral-700;
+      border-radius: 16px;
     }
   
     .scroll-box span{

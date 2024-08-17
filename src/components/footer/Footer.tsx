@@ -56,7 +56,7 @@ function Footer() {
             <h1 className="text-xl sm:text-3xl font-bold mb-2">
              LOGO
             </h1>
-            <p className="w-3/">Faith Baptist Schools Accusamus voluptates eos assumenda esse eaque rerum culpa ipsa ab dolores atque! Eaque quam voluptatibus quis neque delectus </p>       
+            <p className="w-3/"> A nurturing environment where your child can thrive academically and morally. At Faith Baptist Schools, we blend innovative teaching with strong values, ensuring a well-rounded education. With supportive parents and a dedicated team, we create a home away from home where every child excels. Choose Faith Baptist—where bright futures begin!</p>       
           </div>
           <div className="flex flex-col justify-center item-center gap-2 p-2 hover:bg-black hover:bg-opacity-40 transition-all rounded-md">
             <h1 className="text-xl sm:text-3xl font-bold mb-2">

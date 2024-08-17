@@ -48,7 +48,7 @@ const Contact = () => {
                 {/* <Breadcrumbs active="Contact" /> */}
 
                
-                  <h1 className="text-4xl p-10 text-center bg-rose-200">Contact Us</h1>
+                  <h1 className="text-4xl p-10 text-center font-semibold bg-rose-200">Contact Us</h1>
                 <AnimatedContainer className='flex flex-col-reverse md:flex-row gap-8 justify-between w-[90%] mx-auto mt-14 '>
                     <form onSubmit={handleSubmit} className='flex flex-col w-full gap-4'>
                         <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
