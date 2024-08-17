@@ -2,7 +2,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import faith from "../../../public/faithbaptist/heroo.jpg";
 import faith1 from "../../../public/faithbaptist/hero2.jpg";
 import faith5 from "../../../public/faithbaptist/faith7.jpg";
@@ -16,7 +16,7 @@ import faith10 from "../../../public/faithbaptist/faith13.jpg";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import Button from '../utils/Button';
+import { SlidingLeftButton } from '../utils/Button';
 
 
 export const galleryImages = [
@@ -25,6 +25,7 @@ export const galleryImages = [
 ];
 
 const GalleryGrid = () => {
+  const router = useRouter()
   const pathname = usePathname();
   const isHomepage = pathname === '/';
 
@@ -69,11 +70,14 @@ const GalleryGrid = () => {
         </SwiperSlide>
       ))}
     </Swiper>
-    <Button
+    <SlidingLeftButton className='border-primary' textColor='primary' bgColor='primary' onClick={()=>router.push("/gallery")}>
+      view more
+    </SlidingLeftButton>
+    {/* <Button
                 href="/gallery"
                 btnText="view more"
                 className='!bg-blue-600 text-white'
-              />
+              /> */}
     </div>
   );
 };

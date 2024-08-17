@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Button from "@/components/utils/Button";
+import Button, { SlidingLeftButton } from "@/components/utils/Button";
 import Space from "@/components/Space";
 import heroImg from "../../public/faithbaptist/hero2.jpg"
 import heroImg2 from "../../public/faithbaptist/heroo.jpg"
@@ -13,10 +13,15 @@ import AnimatedContainer from "@/components/utils/AnimatedContainer";
 import { useState } from "react";
 import OutstandingFeatures from "@/components/outstanding-features/page";
 import GalleryGrid from "@/components/gallery/GalleryGrid";
+import { useRouter } from "next/navigation";
 
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false)
+  const router = useRouter()
+
+
+
   return (
     <main className="bg-slate-50" style={{ overflow: "hidden" }}>
       <div className=" flex flex-col mx-auto w-[90%] lg:flex-row md:items-center justify-between gap-10 relative">
@@ -73,11 +78,10 @@ export default function Home() {
               >
                 At Faith Baptist Nursery and Primary School, we believe that every child deserves a nurturing environment where they can thrive academically and morally. Our dedicated team is committed to fostering an atmosphere of learning infused with discipline and the values of faith. Here, education goes beyond textbooks; it&apos;s about shaping well-rounded individuals equipped for the future. With innovative teaching methods and a vibrant community of supportive parents, we create a home away from home where your child can excel in subjects like reading, writing, mathematics, and the arts. Join us on this exciting journey, and discover why choosing Faith Baptist is one of the best decisions you can make for your child&apos;s education!
               </p>
-              <Button
-                href="/about"
-                btnText="Read more"
-
-              />
+            
+        <SlidingLeftButton className="w-fit border-primary" textColor='primary' bgColor='primary' onClick={()=>router.push("/about")}>
+     Read more
+    </SlidingLeftButton>
             </motion.section>
             <motion.div
               animate={{ x: 0, opacity: 1 }}
