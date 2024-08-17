@@ -51,19 +51,28 @@ type SlidingButtonProps = RetroButtonProp & {
   fontSize?: string; 
   disabled?: boolean;
   className?: string
+  slideDirection: "right" | "left"
 };
 
-export const SlidingLeftButton: React.FC<SlidingButtonProps> = ({ children, onClick, textColor, className }) => {
+export const SlidingButton: React.FC<SlidingButtonProps> = ({ children, onClick, textColor, className, slideDirection }) => {
   return (
     <button
       onClick={onClick}
       className={clsx(`relative group inline-block min-w-[130px] h-[40px] font-semibold text-${textColor} bg-white border-2 rounded-md overflow-hidden transition-all duration-300 ease-in-out z-0 hover:text-white`, className)}
     >
       {children}
-      <span className={`absolute inset-0 w-0 h-full bg-${textColor} -z-[1] transition-all duration-300 ease-in-out left-0 top-0 group-hover:w-full`} />
+      <span className={`absolute inset-y-0 w-0 h-full bg-${textColor} -z-[1] transition-all duration-300 ease-in-out ${slideDirection}-0 top-0 group-hover:w-full`} />
+      {/*
+      for top-bottom
+      <span className={`absolute inset-x-0 top-0 h-0 w-full bg-${textColor} transition-all duration-300 ease-in-out z-[-1] hover:h-full`} />
+      
+      */}
     </button>
   );
 };
+
+
+
 
 
 

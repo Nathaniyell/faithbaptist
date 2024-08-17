@@ -16,7 +16,7 @@ import faith10 from "../../../public/faithbaptist/faith13.jpg";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { SlidingLeftButton } from '../utils/Button';
+import { SlidingButton } from '../utils/Button';
 
 
 export const galleryImages = [
@@ -70,9 +70,9 @@ const GalleryGrid = () => {
         </SwiperSlide>
       ))}
     </Swiper>
-    <SlidingLeftButton className='border-primary' textColor='primary' bgColor='primary' onClick={()=>router.push("/gallery")}>
+    <SlidingButton slideDirection="right" className='border-primary' textColor='primary' bgColor='primary' onClick={()=>router.push("/gallery")}>
       view more
-    </SlidingLeftButton>
+    </SlidingButton>
     {/* <Button
                 href="/gallery"
                 btnText="view more"

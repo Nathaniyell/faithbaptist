@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Button, { SlidingLeftButton } from "@/components/utils/Button";
+import Button, { SlidingButton } from "@/components/utils/Button";
 import Space from "@/components/Space";
 import heroImg from "../../public/faithbaptist/hero2.jpg"
 import heroImg2 from "../../public/faithbaptist/heroo.jpg"
@@ -79,9 +79,9 @@ export default function Home() {
                 At Faith Baptist Nursery and Primary School, we believe that every child deserves a nurturing environment where they can thrive academically and morally. Our dedicated team is committed to fostering an atmosphere of learning infused with discipline and the values of faith. Here, education goes beyond textbooks; it&apos;s about shaping well-rounded individuals equipped for the future. With innovative teaching methods and a vibrant community of supportive parents, we create a home away from home where your child can excel in subjects like reading, writing, mathematics, and the arts. Join us on this exciting journey, and discover why choosing Faith Baptist is one of the best decisions you can make for your child&apos;s education!
               </p>
             
-        <SlidingLeftButton className="w-fit border-primary" textColor='primary' bgColor='primary' onClick={()=>router.push("/about")}>
+        <SlidingButton slideDirection="left" className="w-fit border-primary" textColor='primary' bgColor='primary' onClick={()=>router.push("/about")}>
      Read more
-    </SlidingLeftButton>
+    </SlidingButton>
             </motion.section>
             <motion.div
               animate={{ x: 0, opacity: 1 }}
@@ -181,6 +181,12 @@ export default function Home() {
         <GalleryGrid />
         <Space />
       </AnimatedContainer>
+      <AnimatedContainer>
+                <Space />
+        <div className="w-full">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.8696119410715!2d7.00199967349405!3d4.79241784085872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cf003154252b%3A0x1ceccc83334c918e!2sFaith%20Baptist%20College%2C%20Port%20Harcourt!5e0!3m2!1sen!2sng!4v1723862846832!5m2!1sen!2sng" width="600" height="450" className="w-full h-[20rem]" allowFullScreen loading="lazy"></iframe>
+                </div>
+              </AnimatedContainer>
 
     </main>
   );
