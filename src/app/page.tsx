@@ -62,7 +62,7 @@ export default function Home() {
       </div>
       <Space />
       <AnimatedContainer className="relative bg-cyan-50">
-      <Space border="hidden md:block" />
+      <Space border="" />
         
         <div className="w-[90%] mx-auto relative grid place-items-center py-5">
           <Titles bigHeader="About Faith Baptist Schools" smallHeader="About us" variant="dark" />
@@ -102,7 +102,7 @@ export default function Home() {
       
       <AnimatedContainer className="text-slate-700 bg-white">
       <Space />
-      <Space border="hidden md:block" />
+      <Space border="" />
 
         
         <div className="!w-[90%] mx-auto">
@@ -112,14 +112,14 @@ export default function Home() {
           <WhyChooseUs />
           <Space />
         </div>
-        <Space border="hidden md:block" />
+        <Space border="" />
       </AnimatedContainer>
       
 
       <AnimatedContainer className="relative">
 
         <div className="w-[90%] mx-auto relative grid place-items-center py-5 md:py-10">
-        <Space border="hidden md:block" />
+        <Space border="" />
           <Titles bigHeader="Welcome Message by our Headteacher" smallHeader="Meet our Headteacher" variant="dark" />
 
           <Space />
@@ -166,9 +166,9 @@ export default function Home() {
       </AnimatedContainer>
       <AnimatedContainer className="text-slate-700 bg-white">
         <Space />
-        <Space border="hidden md:block" />
+        <Space border="" />
         <div className="!w-[90%] mx-auto">
-        <Space border="hidden md:block" />
+        <Space border="" />
           <Titles smallHeader="Outstanding features" bigHeader="Why choose Faith Baptist School" variant="dark" />
           <Space />
           <OutstandingFeatures />
@@ -177,7 +177,7 @@ export default function Home() {
         <Space />
       </AnimatedContainer>
       <AnimatedContainer className="bg-[#f7fcfe]">
-      <Space border="hidden md:block" />
+      <Space border="" />
         <Titles smallHeader="Our gallery" bigHeader="Explore Our Gallery" variant="dark" />
         <Space />
         <GalleryGrid />
