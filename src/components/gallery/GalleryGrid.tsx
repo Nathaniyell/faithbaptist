@@ -7,7 +7,6 @@ import faith from "../../../public/faithbaptist/heroo.jpg";
 import faith1 from "../../../public/faithbaptist/hero2.jpg";
 import faith5 from "../../../public/faithbaptist/faith7.jpg";
 import faith3 from "../../../public/faithbaptist/faith9.jpg";
-
 import faith6 from "../../../public/faithbaptist/faith6.jpg";
 import faith7 from "../../../public/faithbaptist/faith5.jpg";
 import faith8 from "../../../public/faithbaptist/faith11.jpg";
@@ -17,6 +16,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { SlidingButton } from '../utils/Button';
+
 
 
 export const galleryImages = [
