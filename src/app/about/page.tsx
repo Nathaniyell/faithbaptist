@@ -17,7 +17,7 @@ const About = () => {
         <div className="w-11/12 mx-auto">
         <h3 className="font-semibold text-3xl text-primary text-center mb-4">The Best Nursery/Primary Education Rivers State</h3>
          
-          <AnimatedContainer className="mt-4 flex flex-col lg:flex-row gap-10 justify-between w-full">
+          <AnimatedContainer className="mt-4 flex flex-col lg:flex-row gap-3 lg:gap-10 justify-between w-full">
             <Image src={schoolBuilding} alt="About our School" className="rounded-md lg:w-2/5 lg:h-[32rem] brightness-70" />
 
             <p className="leading-loose">Welcome to Faith Baptist Nursery and Primary School. In our mind, Schools are meant to be citadels of learning where good moral training, discipline and the fear of God are expected to be inculcated in the pupils. The School Management Board, PTA, and Staff are committed to new innovative teaching methods and the highest possible educational provision by utilizing various physical and virtual learning environments to support pupils learning. <br />
@@ -28,7 +28,7 @@ const About = () => {
         </div>
 
         <AnimatedContainer className="flex flex-col gap-4 items-center bg-red-50 py-4">
-          <h3 className="font-semibold text-3xl text-primary mb-4">School Anthem</h3>
+          <h3 className="font-semibold text-3xl text-primary mb-2">School Anthem</h3>
           <div className="leading-loose flex flex-col md:flex-row gap-6 w-11/12 lg:w-10/12 mx-auto">
             <p>Faith Baptist church Port Harcourt group of schools. <br />
               We preach the life from the real of mind of God
