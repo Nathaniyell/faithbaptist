@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <main className="bg-slate-50" style={{ overflow: "hidden" }}>
       <div
-  className="relative w-full h-[80vh]"
+  className="relative w-full h-full xl:h-[90vh]"
 >
 <Image priority={true} src={heroImg} alt={"Hero Image"} className={`size-full filter brightness-[40%]`} />
   
